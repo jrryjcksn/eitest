@@ -1,6 +1,7 @@
 apiVersion: cluster.x-k8s.io/v1alpha3
 kind: Cluster
 metadata:
+  namespace: weavek8sops
   name: example
 spec:
   clusterNetwork:
@@ -18,6 +19,7 @@ spec:
 apiVersion: cluster.weave.works/v1alpha3
 kind: ExistingInfraCluster
 metadata:
+  namespace: weavek8sops
   name: example
 spec:
   user: ec2-user
